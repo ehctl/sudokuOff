@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="./game.css" rel="stylesheet">
-    <script src="./game.js"></script>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.jpg'%}">
+    <link href="{% static 'game.css' %}" rel="stylesheet">
+    <script src="{% static './game.js' %}"> </script>
     <title>Sudoku</title>
 </head>
 
@@ -19,8 +21,11 @@
         <div id='gameBoard' class="grid-container width-3"> </div>
         <div id='selectBoard' class="grid-container width-1"> </div>
         <div class="dashboard">
-            <h3>Dash board</h3>
+            <!-- <h3>Dash board</h3>
             <div id='rankingBoard' class="ranking-board grid-container width-1">
+            </div > -->
+            <div id='timer' class="timer">
+
             </div>
         </div>
 
@@ -33,13 +38,11 @@
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
         </select>
-        <button id="replayButton"> Start </button>
+        <div class="refreshContainer"> 
+            <img id='refreshImg' class='refreshImg' src="{% static 'refresh.png'%}" />
+        </div>
     </div>
 
-
-    <div id="loadingContainer" class="loading" style="display: none;">
-        <img src="/static/loading.gif" />
-    </div>
 </body>
 
 </html>

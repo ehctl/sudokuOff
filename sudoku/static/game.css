@@ -70,7 +70,7 @@ body {
 }
 
 .grid-item:hover {
-    background-color: #ede3c7;
+    background-color: #f6d78e;
 }
 
 .grid-detail {
@@ -92,6 +92,10 @@ body {
     left: 5%;
     width: 20%;
     height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ranking-board {
@@ -115,4 +119,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.controller-container select {
+    margin: 20px;
+}
+
+.timer {
+    font-size: 30px;
+}
+
+.refreshContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refreshContainer img {
+    width: 30px;
+    height: 30px;
+}
+
+.refreshContainer img:hover {
+    transform: scale(1.5);
 }
