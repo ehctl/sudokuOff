@@ -7,4 +7,4 @@ domain: dynamic dns https://my.noip.com/dynamic-dns </br>
 
 -------------______-----_-___-----___--_---------__--
 
-<b>https://sudoku4sudoku.ddns.net/</b>
+Web: <b>https://sudoku4sudoku.ddns.net/</b>
