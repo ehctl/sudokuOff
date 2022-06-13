@@ -24,8 +24,9 @@ body {
   }
 
 .game-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     position: relative;
@@ -81,15 +82,7 @@ body {
     background-color: #ede3c7 !important;
 }
 
-#selectBoard {
-    position: absolute;
-    right: 10%;
-}
-
 .dashboard {
-    position: absolute;
-    top: 0;
-    left: 5%;
     width: 20%;
     height: 100%;
 
@@ -114,7 +107,7 @@ body {
 }
 
 .controller-container {
-    margin: 20px;
+    margin: 0 20px 0 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -142,4 +135,19 @@ body {
 
 .refreshContainer img:hover {
     transform: scale(1.5);
+}
+
+@media screen and (max-width: 620px) {
+    .game-container {
+        flex-direction: column;
+    }
+
+    .dashboard, #gameBoard {
+        width: 100%;
+        margin:0 0 10px 0;
+    }
+
+    #selectBoard {
+        width: 50%;
+    }
 }
