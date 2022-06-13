@@ -145,8 +145,8 @@ const GAME_MODE_INDEX = {
 Object.freeze(GAME_MODE_INDEX);
 
 const GAME_MODE = {
-    EASY: ['Easy', 15, 20],
-    MEDIUM: ['Medium', 20, 40],
+    EASY: ['Easy', 10, 15],
+    MEDIUM: ['Medium', 20, 30],
     HARD: ['Hard', 40, 60]
 };
 Object.freeze(GAME_MODE);
