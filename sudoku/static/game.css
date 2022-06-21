@@ -150,7 +150,7 @@ body {
     height: 30px;
 }
 
-.refreshContainer img:hover {
+.refresh-container img:hover {
     transform: scale(1.5);
 }
 

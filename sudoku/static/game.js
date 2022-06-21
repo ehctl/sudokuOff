@@ -146,7 +146,7 @@ Object.freeze(GAME_MODE_INDEX);
 
 const GAME_MODE = {
     EASY: ['Easy', 15, 20],
-    MEDIUM: ['Medium', 20, 40],
+    MEDIUM: ['Medium', 30, 40],
     HARD: ['Hard', 40, 60]
 };
 Object.freeze(GAME_MODE);
@@ -271,7 +271,7 @@ class Sudoku {
         }
     }
 
-    checkBox(row, col, num) {
+    checkBox(row, col, num) {   
         for(let i = 0; i < 3; i++)
             for(let j = 0; j < 3; j++)
                 if(this._mat[row + i][col + j] == num)
