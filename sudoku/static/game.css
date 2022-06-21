@@ -135,11 +135,11 @@ body {
     align-items: center;
 }
 
-.refreshContainer img {
+.refresh-container img {
     width: 30px;
     height: 30px;
 }
 
-.refreshContainer img:hover {
+.refresh-container img:hover {
     transform: scale(1.5);
 }
