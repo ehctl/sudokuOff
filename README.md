@@ -1,6 +1,6 @@
 Sudoku ( ͡° ͜ʖ ͡° )
 
-nginx + gunicorn + django </br>
+nginx + daphne + django </br>
 https: certbot https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal </br>
 domain: dynamic dns https://my.noip.com/dynamic-dns </br>
 
